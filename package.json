@@ -1,0 +1,27 @@
+{
+  "name": "news-explorer-frontend",
+  "version": "1.0.0",
+  "description": "API-Powered Website created with HTML, CSS and JavaScript",
+  "main": "./src/pages/index.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --mode development --open --watch",
+    "start": "cross-env NODE_ENV=production webpack-dev-server --mode production --open",
+    "build": "cross-env NODE_ENV=production rimraf dist && webpack --mode production",
+    "deploy": "cross-env NODE_ENV=production gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aleksandr-e-lebedev/news-explorer-frontend.git"
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "JavaScript"
+  ],
+  "author": "Aleksandr Lebedev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aleksandr-e-lebedev/news-explorer-frontend/issues"
+  },
+  "homepage": "https://github.com/aleksandr-e-lebedev/news-explorer-frontend#readme"
+}
