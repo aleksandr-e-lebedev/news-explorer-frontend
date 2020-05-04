@@ -1,0 +1,5 @@
+@media screen and (max-width: 767px) {
+  .header__menu_theme_dark {
+    background: #1A1B22;
+  }
+}

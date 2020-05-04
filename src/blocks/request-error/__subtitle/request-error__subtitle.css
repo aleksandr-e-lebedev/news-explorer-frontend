@@ -1,0 +1,20 @@
+.request-error__subtitle {
+  width: 90%;
+
+  margin: 16px auto 0;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+
+  text-align: center;
+
+  color: #B6BCBF;
+}
+
+@media screen and (max-width: 1023px) {
+  .request-error__subtitle {
+    margin: 12px auto 0;
+  }
+}

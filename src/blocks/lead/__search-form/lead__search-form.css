@@ -1,0 +1,15 @@
+.lead__search-form {
+  margin-top: 64px;
+}
+
+@media screen and (max-width: 1023px) {
+  .lead__search-form {
+    margin-top: 48px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .lead__search-form {
+    margin-top: 124px;
+  }
+}

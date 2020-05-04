@@ -1,0 +1,7 @@
+.card__controls-item_type_trash {
+  background-image: url('./../../../../images/icon-trash-normal.svg');
+}
+
+.card__controls-item_type_trash:hover {
+  background-image: url('./../../../../images/icon-trash-hover.svg');
+}

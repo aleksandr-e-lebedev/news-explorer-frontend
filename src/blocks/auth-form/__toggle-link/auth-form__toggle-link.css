@@ -1,0 +1,10 @@
+.auth-form__toggle-link {
+  color: #2F71E5;
+  text-decoration: none;
+
+  transition: opacity .2s;
+}
+
+.auth-form__toggle-link:hover {
+  opacity: .7;
+}

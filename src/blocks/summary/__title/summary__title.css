@@ -1,0 +1,22 @@
+.summary__title {
+  margin: 0;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+
+  color: rgba(26, 27, 34, 0.5);
+}
+
+@media screen and (max-width: 1023px) {
+  .summary__title {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .summary__title {
+    font-size: 12px;
+  }
+}

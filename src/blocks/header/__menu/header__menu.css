@@ -1,0 +1,19 @@
+@import url('./_theme/header__menu_theme_dark.css');
+@import url('./_theme/header__menu_theme_light.css');
+@import url('./_mobile-menu-active/header__menu_mobile-menu-active.css');
+
+@media screen and (max-width: 767px) {
+  .header__menu {
+    width: 100%;
+
+    margin-top: 56px;
+
+    border-radius: 0 0 16px 16px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: none;
+  }
+}

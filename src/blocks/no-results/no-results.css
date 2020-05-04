@@ -1,0 +1,26 @@
+@import url('./_active/no-results_active.css');
+@import url('./__not-found-icon/no-results__not-found-icon.css');
+@import url('./__title/no-results__title.css');
+@import url('./__subtitle/no-results__subtitle.css');
+
+.no-results {
+  box-sizing: border-box;
+
+  padding: 80px 0;
+
+  display: none;
+
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 1023px) {
+  .no-results {
+    padding: 40px 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .no-results {
+    padding: 32px 0;
+  }
+}

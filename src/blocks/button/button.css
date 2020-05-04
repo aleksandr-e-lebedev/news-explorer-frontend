@@ -1,0 +1,23 @@
+@import url('./_form/button_form_oval.css');
+@import url('./_type/button_type_submit.css');
+@import url('./_disabled/button_disabled.css');
+@import url('./__text/button__text.css');
+@import url('./__text/_theme/button__text_theme_dark.css');
+
+.button {
+  display: block;
+
+  padding: 0;
+
+  cursor: pointer;
+
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:disabled {
+  cursor: default;
+}

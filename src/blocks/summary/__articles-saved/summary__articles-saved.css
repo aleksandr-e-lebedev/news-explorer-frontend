@@ -1,0 +1,4 @@
+.summary__articles-saved::before {
+  content: "\A";
+  white-space: pre;
+}

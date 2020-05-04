@@ -1,0 +1,11 @@
+@import url('./_type/card__controls-tooltip-text_type_bookmark.css');
+@import url('./_type/card__controls-tooltip-text_type_trash.css');
+
+.card__controls-tooltip-text {
+  margin: 0;
+
+  font-style: normal;
+  font-weight: 500;
+
+  color: #000000;
+}

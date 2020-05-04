@@ -1,0 +1,11 @@
+.card__image {
+  display: block;
+
+  width: 100%;
+  height: inherit;
+
+  border-radius: 16px 16px 0 0;
+
+  object-position: center;
+  object-fit: cover;
+}

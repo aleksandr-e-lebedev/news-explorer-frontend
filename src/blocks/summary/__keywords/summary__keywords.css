@@ -1,0 +1,24 @@
+.summary__keywords {
+  margin: 32px 0 0;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+
+  color: #1A1B22;
+}
+
+@media screen and (max-width: 1023px) {
+  .summary__keywords {
+    margin: 16px 0 0;
+
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .summary__keywords {
+    font-size: 18px;
+  }
+}

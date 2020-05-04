@@ -1,0 +1,31 @@
+@import url('./_active/results_active.css');
+@import url('./_type/results_type_saved-articles.css');
+@import url('./__title/results__title.css');
+@import url('./__grid/results__grid.css');
+@import url('./__button/results__button.css');
+@import url('./__button-text/results__button-text.css');
+
+.results {
+  box-sizing: border-box;
+
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  display: none;
+
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 1023px) {
+  .results {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .results {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}

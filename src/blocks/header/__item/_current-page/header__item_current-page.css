@@ -1,0 +1,18 @@
+.header__item_current-page {
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid #FFFFFF;
+}
+
+.header__item_theme_dark.header__item_current-page {
+  border-bottom: 3px solid #1A1B22;
+}
+
+@media screen and (max-width: 767px) {
+  .header__item_current-page {
+    border: none;
+  }
+
+  .header__item_theme_dark.header__item_current-page {
+    border: none;
+  }
+}

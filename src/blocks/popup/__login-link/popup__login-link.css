@@ -1,0 +1,19 @@
+.popup__login-link {
+  display: inline-block;
+  margin: 16px 0 0;
+
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+
+  color: #2F71E5;
+  text-decoration: none;
+
+  transition: opacity .2s;
+}
+
+.popup__login-link:hover {
+  opacity: .7;
+}

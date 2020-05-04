@@ -1,0 +1,39 @@
+@import url('./_active/results__button_active.css');
+
+.results__button {
+  width: 288px;
+  height: 64px;
+
+  margin: 64px auto 0;
+
+  border: none;
+  border-radius: 80px;
+
+  display: none;
+
+  background: #FFFFFF;
+  box-shadow: 0px 5px 15px rgba(14, 26, 57, 0.2);
+
+  transition: opacity .2s;
+}
+
+.results__button:hover {
+  opacity: 0.9;
+}
+
+@media screen and (max-width: 1023px) {
+  .results__button {
+    width: 240px;
+    height: 56px;
+
+    margin: 22px auto 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .results__button {
+    width: 100%;
+
+    margin: 16px auto 0;
+  }
+}

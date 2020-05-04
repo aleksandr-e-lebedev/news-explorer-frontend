@@ -1,0 +1,7 @@
+@media screen and (max-width: 767px) {
+  .separator.separator_sticky-mobile {
+    position: sticky;
+    top: 56px;
+    z-index: 11;
+  }
+}

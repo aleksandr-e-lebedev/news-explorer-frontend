@@ -1,0 +1,30 @@
+.request-error__title {
+  width: 90%;
+
+  margin: 32px auto 0;
+
+  font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 30px;
+
+  text-align: center;
+
+  color: #1A1B22;
+}
+
+@media screen and (max-width: 1023px) {
+  .request-error__title {
+    margin: 26px auto 0;
+
+    font-size: 22px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .request-error__title {
+    line-height: 26px;
+  }
+}

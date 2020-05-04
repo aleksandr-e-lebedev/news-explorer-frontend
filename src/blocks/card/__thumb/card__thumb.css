@@ -1,0 +1,15 @@
+.card__thumb {
+  height: 272px;
+}
+
+@media screen and (max-width: 1023px) {
+  .card__thumb {
+    height: 148px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .card__thumb {
+    height: 196px;
+  }
+}
