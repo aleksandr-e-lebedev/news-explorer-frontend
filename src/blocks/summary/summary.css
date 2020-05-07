@@ -1,0 +1,33 @@
+@import url('./__title/summary__title.css');
+@import url('./__articles/summary__articles.css');
+@import url('./__articles-saved/summary__articles-saved.css');
+@import url('./__keywords/summary__keywords.css');
+@import url('./__keyword/summary__keyword.css');
+
+.summary {
+  box-sizing: border-box;
+
+  min-height: calc(376px - 80px);
+
+  padding-top: 40px;
+  padding-bottom: 56px;
+
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 1023px) {
+  .summary {
+    min-height: calc(272px - 68px);
+
+    padding-top: 24px;
+    padding-bottom: 32px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .summary {
+    min-height: calc(304px - 56px);
+
+    padding-top: 8px;
+  }
+}

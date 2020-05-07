@@ -1,0 +1,9 @@
+.auth-form__input.auth-form__input_disabled {
+  border-bottom: 1px solid rgba(0, 0, 0, 1);
+  background: transparent;
+  opacity: .2;
+}
+
+.auth-form__input.auth-form__input_disabled::placeholder {
+  opacity: 1;
+}

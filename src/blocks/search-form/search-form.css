@@ -1,0 +1,10 @@
+@import url('./__input/search-form__input.css');
+@import url('./__error/search-form__error.css');
+@import url('./__error/_active/search-form__error_active.css');
+@import url('./__button/search-form__button.css');
+
+.search-form {
+  position: relative;
+
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}

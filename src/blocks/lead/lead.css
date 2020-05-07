@@ -1,0 +1,31 @@
+@import url('./__title/lead__title.css');
+@import url('./__subtitle/lead__subtitle.css');
+@import url('./__search-form/lead__search-form.css');
+
+.lead {
+  box-sizing: border-box;
+
+  min-height: calc(576px - 80px);
+
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 1023px) {
+  .lead {
+    min-height: calc(400px - 68px);
+
+    padding-top: 40px;
+    padding-bottom: 48px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .lead {
+    min-height: calc(536px - 56px);
+
+    padding: 32px 16px;
+  }
+}

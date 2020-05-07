@@ -1,0 +1,14 @@
+@import url('./_theme/separator_theme_dark.css');
+@import url('./_sticky-mobile/separator_sticky-mobile.css');
+
+.separator {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+@media screen and (max-width: 767px) {
+  .separator {
+    position: relative;
+    z-index: 11;
+  }
+}

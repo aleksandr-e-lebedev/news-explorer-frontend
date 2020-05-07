@@ -1,0 +1,48 @@
+@import url('./__link/card__link.css');
+@import url('./__thumb/card__thumb.css');
+@import url('./__image/card__image.css');
+@import url('./__content/card__content.css');
+@import url('./__date/card__date.css');
+@import url('./__title/card__title.css');
+@import url('./__text/card__text.css');
+@import url('./__source/card__source.css');
+
+@import url('./__controls/card__controls.css');
+@import url('./__controls-item/card__controls-item.css');
+@import url('./__controls-tooltip/card__controls-tooltip.css');
+@import url('./__controls-tooltip-text/card__controls-tooltip-text.css');
+
+@import url('./__keyword/card__keyword.css');
+@import url('./__keyword-value/card__keyword-value.css');
+
+.card {
+  border-radius: 16px;
+
+  position: relative;
+
+  background-color: #FFFFFF;
+
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+
+  transition: box-shadow .2s ease;
+}
+
+.card:hover {
+  box-shadow: 0 24px 58px rgba(8, 29, 45, 0.1);
+}
+
+@media screen and (max-width: 1023px) {
+  .card:hover {
+    box-shadow: 0 8px 24px rgba(8, 29, 45, 0.1);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .card {
+    margin-top: 12px;
+  }
+
+  .card:first-of-type {
+    margin-top: 0;
+  }
+}

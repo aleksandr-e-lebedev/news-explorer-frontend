@@ -1,0 +1,7 @@
+.header__burger_theme_dark {
+  background-image: url('./../../../../images/icon-burger-menu-open-dark.svg');
+}
+
+.header__burger_active.header__burger_theme_dark {
+  background-image: url('./../../../../images/icon-burger-menu-close-dark.svg');
+}

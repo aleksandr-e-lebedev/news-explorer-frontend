@@ -1,0 +1,34 @@
+@import url('./__photo/author__photo.css');
+@import url('./__about/author__about.css');
+@import url('./__title/author__title.css');
+@import url('./__text/author__text.css');
+
+.author {
+  box-sizing: border-box;
+
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  display: flex;
+
+  background: #FFFFFF;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 1023px) {
+  .author {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .author {
+    padding-top: 32px;
+    padding-bottom: 80px;
+
+    display: block;
+  }
+}

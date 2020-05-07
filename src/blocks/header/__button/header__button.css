@@ -1,0 +1,26 @@
+.header__button {
+  height: 48px;
+
+  border: 1px solid #FFFFFF;
+
+  padding: 0 16px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: transparent;
+}
+
+@media screen and (max-width: 1023px) {
+  .header__button {
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header__button {
+    height: 56px;
+    width: 100%;
+  }
+}

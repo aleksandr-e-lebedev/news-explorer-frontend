@@ -1,0 +1,11 @@
+.header__link_current-page {
+  pointer-events: none;
+}
+
+.header__link_theme_light.header__link_current-page {
+  color: #FFFFFF;
+}
+
+.header__link_theme_dark.header__link_current-page {
+  color: #1A1B22;
+}

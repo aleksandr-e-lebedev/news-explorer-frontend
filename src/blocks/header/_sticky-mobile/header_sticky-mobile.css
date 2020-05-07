@@ -1,0 +1,7 @@
+@media screen and (max-width: 767px) {
+  .header_sticky-mobile {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+}

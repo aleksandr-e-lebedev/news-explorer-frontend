@@ -1,0 +1,13 @@
+.header__link_theme_light {
+  color: #B6BCBF;
+}
+
+.header__link_theme_light:hover {
+  color: #FFFFFF;
+}
+
+@media screen and (max-width: 767px) {
+  .header__link_theme_light {
+    color: #FFFFFF;
+  }
+}

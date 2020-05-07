@@ -1,0 +1,26 @@
+@import url('./_theme/header__link_theme_light.css');
+@import url('./_theme/header__link_theme_dark.css');
+@import url('./_current-page/header__link_current-page.css');
+
+.header__link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+
+  text-decoration: none;
+
+  transition: color .2s;
+}
+
+@media screen and (max-width: 1023px) {
+  .header__link {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header__link {
+    font-size: 18px;
+  }
+}

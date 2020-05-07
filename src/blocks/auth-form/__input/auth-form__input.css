@@ -1,0 +1,33 @@
+@import url('./_disabled/auth-form__input_disabled.css');
+
+.auth-form__input {
+  box-sizing: border-box;
+
+  width: 100%;
+
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, .2);
+
+  padding: 12px 0 8px;
+
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+
+  color: #000000;
+
+  background: #FFFFFF;
+
+  transition: border .2s, opacity .2s;
+}
+
+.auth-form__input::placeholder {
+  opacity: 0.2;
+}
+
+.auth-form__input:focus {
+  border-bottom: 1px solid rgba(0, 0, 0, 1);
+  outline: none;
+}

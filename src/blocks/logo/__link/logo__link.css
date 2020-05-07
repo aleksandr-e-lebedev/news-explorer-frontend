@@ -1,0 +1,18 @@
+@import url('./_current-page/logo__link_current-page.css');
+@import url('./_theme/logo__link_theme_light.css');
+@import url('./_theme/logo__link_theme_dark.css');
+
+.logo__link {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+
+  text-decoration: none;
+}
+
+@media screen and (max-width: 767px) {
+  .logo__link {
+    font-size: 16px;
+  }
+}

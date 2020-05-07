@@ -1,0 +1,14 @@
+.header__button_theme_dark {
+  border-color: #D1D2D6;
+  transition: border-color .2s;
+}
+
+.header__button_theme_dark:hover {
+  border-color: #1A1B22;
+}
+
+@media screen and (max-width: 767px) {
+  .header__button_theme_dark {
+    border-color: #1A1B22;
+  }
+}

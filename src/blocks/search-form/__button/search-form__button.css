@@ -1,0 +1,25 @@
+.search-form__button {
+  width: 168px;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+@media screen and (max-width: 1023px) {
+  .search-form__button {
+    width: 160px;
+    height: 56px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .search-form__button {
+    width: 100%;
+    height: 56px;
+
+    margin-top: 16px;
+
+    position: static;
+  }
+}

@@ -1,0 +1,18 @@
+.no-results__not-found-icon {
+  width: 96px;
+  height: 96px;
+
+  margin: auto;
+
+  background-image: url('../../../images/icon-not-found.svg');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 1023px) {
+  .no-results__not-found-icon {
+    width: 82px;
+    height: 82px;
+  }
+}

@@ -1,0 +1,24 @@
+.card__content {
+  box-sizing: border-box;
+
+  height: calc(568px - 272px);
+
+  padding: 20px 24px 24px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 1023px) {
+  .card__content {
+    height: calc(416px - 148px);
+
+    padding: 16px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .card__content {
+    height: calc(436px - 188px);
+  }
+}

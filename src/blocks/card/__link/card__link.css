@@ -1,0 +1,9 @@
+.card__link {
+  display: block;
+  height: 100%;
+
+  position: relative;
+  z-index: 1;
+
+  text-decoration: none;
+}

@@ -1,0 +1,18 @@
+@import url('./_current-page/footer__link_current-page.css');
+
+.footer__link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+
+  color: #1A1B22;
+
+  text-decoration: none;
+
+  transition: opacity .2s;
+}
+
+.footer__link:hover {
+  opacity: .5;
+}

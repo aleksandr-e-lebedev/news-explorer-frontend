@@ -1,0 +1,17 @@
+@import url('./__title/auth-form__title.css');
+@import url('./__field/auth-form__field.css');
+@import url('./__field/_no-bottom-margin/auth-form__field_no-bottom-margin.css');
+@import url('./__label/auth-form__label.css');
+@import url('./__input/auth-form__input.css');
+@import url('./__error/auth-form__error.css');
+@import url('./__error/_active/auth-form__error_active.css');
+@import url('./__error/_type/auth-form__error_type_server-error.css');
+@import url('./__spacer/auth-form__spacer.css');
+@import url('./__toggle/auth-form__toggle.css');
+@import url('./__toggle-link/auth-form__toggle-link.css');
+
+.auth-form {
+  width: 100%;
+
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}

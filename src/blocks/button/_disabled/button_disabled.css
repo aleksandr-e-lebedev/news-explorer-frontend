@@ -1,0 +1,12 @@
+.button_disabled {
+  background: #E6E8EB;
+  box-shadow: none;
+}
+
+.button_disabled:hover {
+  background: #E6E8EB;
+}
+
+.button_disabled:active {
+  background: #E6E8EB;
+}

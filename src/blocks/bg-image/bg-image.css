@@ -1,0 +1,18 @@
+.bg-image {
+  background-image: url('./../../images/photo-lead-default.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 1023px) {
+  .bg-image {
+    background-image: url('./../../images/photo-lead-tablet.jpg');
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .bg-image {
+    background-image: url('./../../images/photo-lead-mobile.jpg');
+  }
+}

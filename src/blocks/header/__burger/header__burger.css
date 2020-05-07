@@ -1,0 +1,23 @@
+@import url('./_theme/header__burger_theme_light.css');
+@import url('./_theme/header__burger_theme_dark.css');
+
+.header__burger {
+  width: 24px;
+  height: 24px;
+
+  border: none;
+
+  align-self: center;
+
+  background-color: transparent;
+
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 767px) {
+  .header__burger {
+    display: none;
+  }
+}

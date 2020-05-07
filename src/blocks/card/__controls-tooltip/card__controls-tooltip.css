@@ -1,0 +1,39 @@
+@import url('./_active/card__controls-tooltip_active.css');
+
+.card__controls-tooltip {
+  box-sizing: border-box;
+
+  height: 40px;
+
+  margin-right: 8px;
+  border-radius: 10px;
+  padding: 0 16px;
+
+  display: flex;
+  align-items: center;
+
+  position: relative;
+  z-index: 2;
+
+  pointer-events: none;
+
+  opacity: 0;
+  background-color: #FFFFFF;
+
+  box-shadow: 0px 10px 22px rgba(59, 74, 116, 0.1);
+
+  transition: opacity .4s linear;
+}
+
+@media screen and (max-width: 1023px) {
+  .card__controls-tooltip {
+    margin-right: 4px;
+    padding: 0 8px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .card__controls-tooltip {
+    display: none;
+  }
+}
