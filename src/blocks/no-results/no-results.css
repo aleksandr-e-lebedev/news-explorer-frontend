@@ -1,4 +1,3 @@
-@import url('./_active/no-results_active.css');
 @import url('./__not-found-icon/no-results__not-found-icon.css');
 @import url('./__title/no-results__title.css');
 @import url('./__subtitle/no-results__subtitle.css');
@@ -7,8 +6,6 @@
   box-sizing: border-box;
 
   padding: 80px 0;
-
-  display: none;
 
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
