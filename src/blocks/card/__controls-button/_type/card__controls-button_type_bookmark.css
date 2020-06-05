@@ -1,11 +1,11 @@
-.card__controls-item_type_bookmark {
+.card__controls-button_type_bookmark {
   background-image: url('./../../../../images/icon-bookmark-normal.svg');
 }
 
-.card__controls-item_type_bookmark:hover {
+.card__controls-button_type_bookmark:hover {
   background-image: url('./../../../../images/icon-bookmark-hover.svg');
 }
 
-.card__controls-item_marked.card__controls-item_type_bookmark {
+.card__controls-button_marked.card__controls-button_type_bookmark {
   background-image: url('./../../../../images/icon-bookmark-marked.svg');
 }
