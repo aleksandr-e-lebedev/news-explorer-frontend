@@ -18,6 +18,8 @@
 .card {
   border-radius: 16px;
 
+  overflow: hidden;
+
   position: relative;
 
   background-color: #FFFFFF;
