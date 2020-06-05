@@ -14,10 +14,10 @@
   background: #347EFF;
 }
 
-.button_type_submit:active {
-  background: #2A65CC;
-}
-
 .button_type_submit:focus {
   background: #347EFF;
+}
+
+.button_type_submit:active {
+  background: #2A65CC;
 }
