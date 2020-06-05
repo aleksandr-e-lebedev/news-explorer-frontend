@@ -1,4 +1,5 @@
 .auth-form__error {
+  min-height: 16px;
   margin: 4px 0 0;
 
   font-family: 'Inter', Arial, Helvetica, sans-serif;
