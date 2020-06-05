@@ -1,6 +1,7 @@
 @import url('./_form/button_form_oval.css');
 @import url('./_type/button_type_submit.css');
 @import url('./_disabled/button_disabled.css');
+@import url('./_hidden/button_hidden.css');
 @import url('./__text/button__text.css');
 @import url('./__text/_theme/button__text_theme_dark.css');
 
