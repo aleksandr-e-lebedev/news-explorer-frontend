@@ -9,7 +9,7 @@
   <meta name="author" content="Александр Лебедев">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>NewsExplorer</title>
-  <link rel="stylesheet" href="main/main.b7819e9f588a4a18eb31.css">
+  <link rel="stylesheet" href="main/main.63aaf764a43735234e4b.css">
   <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
 </head>
 
@@ -32,22 +32,22 @@
             <ul class="header__list">
 
               <li class="header__item header__item_current-page">
-                <a href="./" id="menu-link-main" class="header__link header__link_theme_light header__link_current-page">Главная</a>
+                <a href="./" class="header__link header__link_theme_light header__link_current-page">Главная</a>
               </li>
 
-              <li id="menu-item-login" class="header__item">
-                <button type="button" id="menu-button-login" class="button button_form_oval header__button">
-                  <span class="button__text">Авторизоваться</span>
+              <li class="header__item header__item_type_login">
+                <button type="button" class="button button_form_oval header__button header__button_type_login">
+                  <span class="button__text header__button-text">Авторизоваться</span>
                 </button>
               </li>
 
-              <li id="menu-item-saved-articles" class="header__item header__item_hidden">
-                <a href="./articles" id="menu-link-saved-articles" class="header__link header__link_theme_light">Сохранённые статьи</a>
+              <li class="header__item header__item_type_saved-articles header__item_hidden">
+                <a href="./articles" class="header__link header__link_theme_light">Сохранённые статьи</a>
               </li>
 
-              <li id="menu-item-logout" class="header__item header__item_hidden">
-                <button type="button" id="menu-button-logout" class="button button_form_oval header__button">
-                  <span id="menu-button-logout-text" class="button__text">Грета</span>
+              <li class="header__item header__item_type_logout header__item_hidden">
+                <button type="button" class="button button_form_oval header__button header__button_type_logout">
+                  <span class="button__text header__button-text"></span>
                   <img src="./images/icon-logout.svg" alt="Иконка кнопки выхода" class="header__logout-icon">
                 </button>
               </li>
@@ -55,7 +55,7 @@
             </ul>
           </nav>
 
-          <button type="button" id="burger-button" class="button header__burger header__burger_theme_light"></button>
+          <button type="button" class="button header__burger header__burger_theme_light"></button>
 
         </div>
 
@@ -66,10 +66,10 @@
       <section class="lead page__lead">
         <h1 class="lead__title">Что в мире творится?</h1>
         <p class="lead__subtitle">Находите самые свежие статьи на любую тему и сохраняйте в своём личном кабинете.</p>
-        <form class="search-form lead__search-form" novalidate>
-          <input type="text" class="search-form__input" placeholder="Введите тему новости" required>
-          <p class="search-form__error">Нужно ввести ключевое слово</p>
-          <button type="submit" class="button button_form_oval button_type_submit search-form__button">
+        <form class="form search-form lead__search-form" novalidate>
+          <input type="text" name="search" id="search" class="form__input search-form__input" placeholder="Введите тему новости" required>
+          <p id="error-search" class="search-form__error">Нужно ввести ключевое слово</p>
+          <button type="submit" class="button button_form_oval button_type_submit form__button search-form__button">
             <span class="button__text">Искать</span>
           </button>
         </form>
@@ -77,130 +77,7 @@
 
     </div>
 
-    <main class="content">
-
-      <section class="loading">
-        <div class="loading__preloader"></div>
-        <h2 class="loading__title">Идёт поиск новостей...</h2>
-      </section>
-
-      <section class="no-results content__section">
-        <div class="no-results__not-found-icon"></div>
-        <h2 class="no-results__title">Ничего не найдено</h2>
-        <p class="no-results__subtitle">К сожалению по Вашему запросу ничего не найдено.</p>
-      </section>
-
-      <section class="request-error content__section">
-        <div class="request-error__error-icon"></div>
-        <h2 class="request-error__title">Во время запроса произошла ошибка</h2>
-        <p class="request-error__subtitle">
-          Возможно, проблема с соединением или сервер недоступен.
-          Подождите немного и попробуйте ещё раз.
-        </p>
-      </section>
-
-      <section class="results page__section">
-
-        <h2 class="results__title">Результаты поиска</h2>
-
-        <section class="grid results__grid">
-
-          <!-- Пример - 1 - Не авторизован -->
-          <article class="card">
-            <a href="https://www.bbc.com/news/in-pictures-52384143" target="_blank" class="card__link">
-
-              <div class="card__thumb">
-                <img src="https://images.unsplash.com/photo-1587391899736-771c64bb7c71?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" alt="Изображение карточки" class="card__image">
-              </div>
-
-              <div class="card__content">
-                <p class="card__date">2 августа, 2019</p>
-                <h3 class="card__title">Национальное достояние – парки</h3>
-                <p class="card__text">
-                  В 2016 году Америка отмечала важный юбилей:
-                  сто лет назад здесь начала складываться система национальных парков – охраняемых территорий,
-                  где и сегодня каждый может приобщиться к природе.
-                </p>
-                <p class="card__source">Лента.ру</p>
-              </div>
-
-            </a>
-
-            <div class="card__controls">
-              <button type="button" class="card__controls-item card__controls-item_type_bookmark"></button>
-              <div class="card__controls-tooltip card__controls-tooltip_active">
-                <p class="card__controls-tooltip-text card__controls-tooltip-text_type_bookmark">Войдите, чтобы сохранять статьи</p>
-              </div>
-            </div>
-          </article>
-
-          <!-- Пример - 2 - Авторизован -->
-          <article class="card">
-            <a href="https://www.androidcentral.com/best-flower-delivery-services" target="_blank" class="card__link">
-
-              <div class="card__thumb">
-                <img src="https://images.unsplash.com/photo-1587382759688-824b29492f4a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=633&q=80" alt="Изображение карточки" class="card__image">
-              </div>
-
-              <div class="card__content">
-                <p class="card__date">2 августа, 2019</p>
-                <h3 class="card__title">Лесные огоньки: история одной фотографии</h3>
-                <p class="card__text">
-                  Фотограф отвлеклась от освещения суровой политической реальности Мексики,
-                  чтобы запечатлеть ускользающую красоту одного из местных чудес природы.
-                </p>
-                <p class="card__source">Медуза</p>
-              </div>
-
-            </a>
-
-            <div class="card__controls">
-              <button type="button" class="card__controls-item card__controls-item_type_bookmark"></button>
-              <div class="card__controls-tooltip">
-                <p class="card__controls-tooltip-text card__controls-tooltip-text_type_bookmark">Войдите, чтобы сохранять статьи</p>
-              </div>
-            </div>
-          </article>
-
-          <!-- Пример - 3 - Авторизован - Сохранил -->
-          <article class="card">
-            <a href="https://www.theverge.com/2020/5/4/21246560/samsung-qled-galaxy-book-flex-alpha-ion-available-now" target="_blank" class="card__link">
-
-              <div class="card__thumb">
-                <img src="https://images.unsplash.com/photo-1587483667815-144873f396cd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" alt="Изображение карточки" class="card__image">
-              </div>
-
-              <div class="card__content">
-                <p class="card__date">2 августа, 2019</p>
-                <h3 class="card__title">Samsung’s QLED-display Galaxy Book laptops are now available</h3>
-                <p class="card__text">
-                  Samsung’s new Galaxy Book laptops are available for purchase in the United States.
-                  All three of the laptops in this lineup include 10th Gen CPUs from Intel with pricing starting at $849.99.
-                  The lineup includes some intriguing features: they are the first Samsung laptops to use a QLED display,
-                  which is the same display technology that the company uses in its high-end flat-screen TVs.
-                </p>
-                <p class="card__source">Риа</p>
-              </div>
-
-            </a>
-
-            <div class="card__controls">
-              <button type="button" class="card__controls-item card__controls-item_type_bookmark card__controls-item_marked"></button>
-              <div class="card__controls-tooltip">
-                <p class="card__controls-tooltip-text card__controls-tooltip-text_type_bookmark">Войдите, чтобы сохранять статьи</p>
-              </div>
-            </div>
-          </article>
-
-        </section>
-
-        <button type="button" class="button results__button">
-          <span class="button__text results__button-text">Показать ещё</span>
-        </button>
-
-      </section>
-
-    </main>
+    <main class="content"></main>
 
     <section class="author page__section">
       <picture class="author__picture">
@@ -256,105 +133,169 @@
       </div>
     </footer>
 
-    <!-- Пример - Попап - Вход -->
-    <div id="popup-login" class="popup">
+    <!-- Шаблон - Сетка с карточками -->
+    <template id="card-list-template">
+      <section class="card-list page__section">
 
-      <div class="overlay popup__overlay"></div>
+        <h2 class="card-list__title">Результаты поиска</h2>
 
-      <div class="popup__content">
-        <button type="button" class="button popup__close"></button>
+        <div class="card-list__grid"></div>
 
-        <form id="auth-form-login" class="auth-form" novalidate>
-          <h3 class="auth-form__title">Вход</h3>
+        <button type="button" class="button card-list__button button_hidden">
+          <span class="button__text card-list__button-text">Показать ещё</span>
+        </button>
 
-          <div class="auth-form__field">
-            <label for="login-email" class="auth-form__label">Email</label>
-            <input type="email" id="login-email" class="auth-form__input" pattern="^[\w\-\.]{2,}@([\w\-]{1,63}\.)*[\w\-]{2,63}\.[a-z]{2,}$" placeholder="Введите почту" required>
-            <p id="error-login-email" class="auth-form__error">Неправильный формат email</p>
+      </section>
+    </template>
+
+    <!-- Шаблон - Карточка -->
+    <template id="card-template">
+      <article class="card">
+        <a href="" target="_blank" class="card__link">
+
+          <div class="card__thumb">
+            <img src="" alt="Изображение карточки" class="card__image">
           </div>
 
-          <div class="auth-form__field auth-form__field_no-bottom-margin">
-            <label for="login-password" class="auth-form__label">Пароль</label>
-            <input type="password" id="login-password" class="auth-form__input" minlength="8" placeholder="Введите пароль" required>
-            <p id="error-login-password" class="auth-form__error">Пароль должен содержать не менее 8 символов</p>
+          <div class="card__content">
+            <p class="card__date"></p>
+            <h3 class="card__title"></h3>
+            <p class="card__text"></p>
+            <p class="card__source"></p>
           </div>
 
-          <div class="auth-form__spacer">
-            <p id="error-login-server" class="auth-form__error auth-form__error_type_server-error">Неправильные почта или пароль</p>
+        </a>
+
+        <div class="card__controls">
+          <button type="button" class="button card__controls-button card__controls-button_type_bookmark"></button>
+          <div class="card__controls-tooltip card__controls-tooltip_active">
+            <p class="card__controls-tooltip-text card__controls-tooltip-text_type_bookmark">Войдите, чтобы сохранять статьи</p>
           </div>
+        </div>
+      </article>
+    </template>
 
-          <button type="submit" id="submit-button-login" class="button button_form_oval button_type_submit button_disabled" disabled>
-            <span class="button__text">Войти</span>
-          </button>
+    <!-- Шаблон - Прелоудер -->
+    <template id="loading-template">
+      <section class="loading">
+        <div class="loading__preloader"></div>
+        <h2 class="loading__title">Идёт поиск новостей...</h2>
+      </section>
+    </template>
 
-          <p class="auth-form__toggle">или <a href="#" id="auth-link-signup" class="auth-form__toggle-link">Зарегистрироваться</a></p>
+    <!-- Шаблон - Секция "Ничего не найдено" -->
+    <template id="no-results-template">
+      <section class="no-results content__section">
+        <div class="no-results__not-found-icon"></div>
+        <h2 class="no-results__title">Ничего не найдено</h2>
+        <p class="no-results__subtitle">К сожалению по Вашему запросу ничего не найдено.</p>
+      </section>
+    </template>
 
-        </form>
+    <!-- Шаблон - Секция "Ошибка запроса" -->
+    <template id="request-error-template">
+      <section class="request-error content__section">
+        <div class="request-error__error-icon"></div>
+        <h2 class="request-error__title">Во время запроса произошла ошибка</h2>
+        <p class="request-error__subtitle">
+          Возможно, проблема с соединением или сервер недоступен.
+          Подождите немного и попробуйте ещё раз.
+        </p>
+      </section>
+    </template>
+
+    <!-- Шаблон - Попап -->
+    <template id="popup-template">
+      <div class="popup">
+
+        <div class="overlay popup__overlay"></div>
+
+        <div class="popup__content">
+          <button type="button" class="button popup__close"></button>
+        </div>
+
       </div>
+    </template>
 
-    </div>
+    <!-- Шаблон - Форма - Вход -->
+    <template id="login-form-template">
+      <form class="form auth-form" novalidate>
 
-    <!-- Пример - Попап - Регистрация -->
-    <div id="popup-signup" class="popup">
+        <h3 class="auth-form__title">Вход</h3>
 
-      <div class="overlay popup__overlay"></div>
+        <div class="auth-form__field">
+          <label for="login-email" class="auth-form__label">Email</label>
+          <input type="email" name="email" id="login-email" class="form__input auth-form__input" pattern="^[\w\-\.]{2,}@([\w\-]{1,63}\.)*[\w\-]{2,63}\.[a-z]{2,}$" placeholder="Введите почту" required>
+          <p id="error-login-email" class="auth-form__error">Неправильный формат email</p>
+        </div>
 
-      <div class="popup__content">
-        <button type="button" class="button popup__close"></button>
+        <div class="auth-form__field auth-form__field_no-bottom-margin">
+          <label for="login-password" class="auth-form__label">Пароль</label>
+          <input type="password" name="password" id="login-password" class="form__input auth-form__input" minlength="8" placeholder="Введите пароль" required>
+          <p id="error-login-password" class="auth-form__error">Пароль должен содержать не менее 8 символов</p>
+        </div>
 
-        <form id="auth-form-signup" class="auth-form" novalidate>
-          <h3 class="auth-form__title">Регистрация</h3>
+        <div class="auth-form__spacer">
+          <p class="auth-form__error auth-form__error_type_server-error">Неправильные почта или пароль</p>
+        </div>
 
-          <div class="auth-form__field">
-            <label for="signup-email" class="auth-form__label">Email</label>
-            <input type="email" id="signup-email" class="auth-form__input" pattern="^[\w\-\.]{2,}@([\w\-]{1,63}\.)*[\w\-]{2,63}\.[a-z]{2,}$" placeholder="Введите почту" required>
-            <p id="error-signup-email" class="auth-form__error">Неправильный формат email</p>
-          </div>
+        <button type="submit" class="button form__button auth-form__button button_form_oval button_type_submit button_disabled" disabled>
+          <span class="button__text">Войти</span>
+        </button>
 
-          <div class="auth-form__field">
-            <label for="signup-password" class="auth-form__label">Пароль</label>
-            <input type="password" id="signup-password" class="auth-form__input" minlength="8" placeholder="Введите пароль" required>
-            <p id="error-signup-password" class="auth-form__error">Пароль должен содержать не менее 8 символов</p>
-          </div>
+        <p class="auth-form__toggle">или <a href="#" class="auth-form__toggle-link auth-form__toggle-link_type_signup">Зарегистрироваться</a></p>
 
-          <div class="auth-form__field auth-form__field_no-bottom-margin">
-            <label for="signup-username" class="auth-form__label">Имя</label>
-            <input type="text" id="signup-username" class="auth-form__input" minlength="2" maxlength="30" placeholder="Введите своё имя" required>
-            <p id="error-signup-username" class="auth-form__error">Имя должно содержать не менее 2 символов</p>
-          </div>
+      </form>
+    </template>
 
-          <div class="auth-form__spacer">
-            <p id="error-signup-server" class="auth-form__error auth-form__error_type_server-error">Такой пользователь уже есть</p>
-          </div>
+    <!-- Шаблон - Форма - Регистрация -->
+    <template id="signup-form-template">
+      <form class="form auth-form" novalidate>
 
-          <button type="submit" id="submit-button-signup" class="button button_form_oval button_type_submit button_disabled" disabled>
-            <span class="button__text">Зарегистрироваться</span>
-          </button>
+        <h3 class="auth-form__title">Регистрация</h3>
 
-          <p class="auth-form__toggle">или <a id="auth-link-login" href="#" class="auth-form__toggle-link">Войти</a></p>
+        <div class="auth-form__field">
+          <label for="signup-email" class="auth-form__label">Email</label>
+          <input type="email" name="email" id="signup-email" class="form__input auth-form__input" pattern="^[\w\-\.]{2,}@([\w\-]{1,63}\.)*[\w\-]{2,63}\.[a-z]{2,}$" placeholder="Введите почту" required>
+          <p id="error-signup-email" class="auth-form__error">Неправильный формат email</p>
+        </div>
 
-        </form>
-      </div>
+        <div class="auth-form__field">
+          <label for="signup-password" class="auth-form__label">Пароль</label>
+          <input type="password" name="password" id="signup-password" class="form__input auth-form__input" minlength="8" placeholder="Введите пароль" required>
+          <p id="error-signup-password" class="auth-form__error">Пароль должен содержать не менее 8 символов</p>
+        </div>
 
-    </div>
+        <div class="auth-form__field auth-form__field_no-bottom-margin">
+          <label for="signup-username" class="auth-form__label">Имя</label>
+          <input type="text" name="username" id="signup-username" class="form__input auth-form__input" minlength="2" maxlength="30" placeholder="Введите своё имя" required>
+          <p id="error-signup-username" class="auth-form__error">Имя должно содержать не менее 2 символов</p>
+        </div>
 
-    <!-- Пример - Попап - Зарегистрирован -->
-    <div id="popup-registered" class="popup">
+        <div class="auth-form__spacer">
+          <p class="auth-form__error auth-form__error_type_server-error">Такой пользователь уже есть</p>
+        </div>
 
-      <div class="overlay popup__overlay"></div>
+        <button type="submit" class="button form__button auth-form__button button_form_oval button_type_submit button_disabled" disabled>
+          <span class="button__text">Зарегистрироваться</span>
+        </button>
 
-      <div class="popup__content">
-        <button type="button" class="button popup__close"></button>
+        <p class="auth-form__toggle">или <a href="#" class="auth-form__toggle-link auth-form__toggle-link_type_login">Войти</a></p>
 
+      </form>
+    </template>
+
+    <!-- Шаблон - Сообщение - Зарегистрирован -->
+    <template id="success-registration-template">
+      <div class="popup__success-registration">
         <h3 class="popup__title">Пользователь успешно зарегистрирован!</h3>
-        <a href="#" id="auth-link-login-registered" class="popup__login-link">Выполнить вход</a>
+        <a href="#" class="popup__login-link">Выполнить вход</a>
       </div>
-
-    </div>
+    </template>
 
   </div>
 
-  <script src="main/main.19a631517f6d367c6073.js"></script>
+  <script src="main/main.1da389460ec89b24a3d2.js"></script>
 </body>
 
 </html>
