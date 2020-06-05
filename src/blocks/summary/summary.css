@@ -7,8 +7,6 @@
 .summary {
   box-sizing: border-box;
 
-  min-height: calc(376px - 80px);
-
   padding-top: 40px;
   padding-bottom: 56px;
 
@@ -17,8 +15,6 @@
 
 @media screen and (max-width: 1023px) {
   .summary {
-    min-height: calc(272px - 68px);
-
     padding-top: 24px;
     padding-bottom: 32px;
   }
@@ -26,8 +22,6 @@
 
 @media screen and (max-width: 767px) {
   .summary {
-    min-height: calc(304px - 56px);
-
     padding-top: 8px;
   }
 }
