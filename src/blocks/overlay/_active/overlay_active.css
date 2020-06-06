@@ -1,0 +1,5 @@
+.overlay.overlay_active {
+  opacity: 1;
+
+  pointer-events: auto;
+}

@@ -1,0 +1,18 @@
+.card-list.card-list_type_saved-articles {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+@media screen and (max-width: 1023px) {
+  .card-list.card-list_type_saved-articles {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .card-list.card-list_type_saved-articles {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}

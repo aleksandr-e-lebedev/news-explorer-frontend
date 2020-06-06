@@ -5,26 +5,11 @@
 
 @import url('./../blocks/bg-image/bg-image.css');
 
-@import url('./../blocks/button/button.css');
-@import url('./../blocks/header/header.css');
 @import url('./../blocks/logo/logo.css');
 
 @import url('./../blocks/separator/separator.css');
 
 @import url('./../blocks/lead/lead.css');
-@import url('./../blocks/search-form/search-form.css');
-
-@import url('./../blocks/content/content.css');
-@import url('./../blocks/loading/loading.css');
-@import url('./../blocks/no-results/no-results.css');
-@import url('./../blocks/request-error/request-error.css');
-@import url('./../blocks/results/results.css');
-@import url('./../blocks/grid/grid.css');
-@import url('./../blocks/card/card.css');
 
 @import url('./../blocks/author/author.css');
 @import url('./../blocks/footer/footer.css');
-
-@import url('./../blocks/popup/popup.css');
-@import url('./../blocks/overlay/overlay.css');
-@import url('./../blocks/auth-form/auth-form.css');

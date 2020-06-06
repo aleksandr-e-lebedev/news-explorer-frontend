@@ -9,6 +9,7 @@
 @import url('./__link/header__link.css');
 @import url('./__button/header__button.css');
 @import url('./__button/_theme/header__button_theme_dark.css');
+@import url('./__button-text/header__button-text.css');
 @import url('./__logout-icon/header__logout-icon.css');
 @import url('./__burger/header__burger.css');
 

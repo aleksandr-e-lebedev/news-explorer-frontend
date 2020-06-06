@@ -1,0 +1,20 @@
+.card-list__grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 16px;
+  row-gap: 16px;
+}
+
+@media screen and (max-width: 1023px) {
+  .card-list__grid {
+    column-gap: 8px;
+    row-gap: 8px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .card-list__grid {
+    display: block;
+  }
+}

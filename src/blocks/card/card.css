@@ -8,7 +8,7 @@
 @import url('./__source/card__source.css');
 
 @import url('./__controls/card__controls.css');
-@import url('./__controls-item/card__controls-item.css');
+@import url('./__controls-button/card__controls-button.css');
 @import url('./__controls-tooltip/card__controls-tooltip.css');
 @import url('./__controls-tooltip-text/card__controls-tooltip-text.css');
 
@@ -17,6 +17,8 @@
 
 .card {
   border-radius: 16px;
+
+  overflow: hidden;
 
   position: relative;
 

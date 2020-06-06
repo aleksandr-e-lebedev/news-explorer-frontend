@@ -1,10 +1,12 @@
-@import url('./_active/header__overlay_active.css');
-
 .header__overlay {
   position: fixed;
   top: 0;
   left: 0;
   z-index: 10;
+}
 
-  display: none;
+@media screen and (min-width: 768px) {
+  .header__overlay {
+    display: none;
+  }
 }

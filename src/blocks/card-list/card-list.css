@@ -1,0 +1,28 @@
+@import url('./_type/card-list_type_saved-articles.css');
+@import url('./__title/card-list__title.css');
+@import url('./__grid/card-list__grid.css');
+@import url('./__button/card-list__button.css');
+@import url('./__button-text/card-list__button-text.css');
+
+.card-list {
+  box-sizing: border-box;
+
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 1023px) {
+  .card-list {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .card-list {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
